@@ -1,0 +1,25 @@
+import json
+import os
+
+def main():
+    filename = input("Fil att läsa från: ")
+    user_id = input("Användar-id: ")
+    
+    if os.path.exists(filename):
+        with open(filename, 'r') as file:
+            data = json.load(file)
+    else:
+        data = {}
+    
+    if user_id in data:
+        print(f"Existerande användare: {data[user_id]}")
+    else:
+        print("Ny användare")
+        name = input("Ange namn (Förnamn Efternamn): ")
+        data[user_id] = name
+        with open(filename, 'w') as file:
+            json.dump(data, file, indent=4)
+        print(f"Filen {filename} har nu följande innehåll\n{data}")
+
+if __name__ == "__main__":
+    main()
