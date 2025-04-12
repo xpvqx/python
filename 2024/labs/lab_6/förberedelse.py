@@ -1,4 +1,4 @@
-import datetime
+import  datetime
 
 def dagar_kvar_till_jul(datum=None):
     jul = datetime.date(2024, 12, 24)
