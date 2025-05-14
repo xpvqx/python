@@ -13,4 +13,34 @@
 #
 # Du får inte lösa uppgiften med en if- eller match-sats.
 
-datum = input('Skriv in en serie datum: ')
+datum_input = input('Skriv in en serie datum: ')
+datum_lista = datum_input.split()
+
+månader = [
+    'januari',
+    'februari',
+    'mars',
+    'april',
+    'maj',
+    'juni',
+    'juli',
+    'augusti',
+    'september',
+    'oktober',
+    'november',
+    'december'
+]
+
+for datum in datum_lista:
+    år = '20' + datum[:2]
+    månad = datum[2:4]
+    dag = datum[4:]
+
+    
+    månad_namn = månader[int(månad) - 1]
+
+    # gör om till string, tar bort nollan i början
+    dag = str(int(dag))
+
+    print(dag, månad_namn, år)
+print()
