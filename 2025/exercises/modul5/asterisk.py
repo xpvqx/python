@@ -1,13 +1,17 @@
-def med_eftertryck(ordet):
+# create the definition
+def asterisk(word):
+    # empty string to store new word
     res = ''
-    for i in range(len(ordet)):
-        res += ordet[i] + '*'
+    # for every index in length of word...
+    for i in range(len(word)):
+        # new word = every index + * (every character + *)
+        res += word[i] + '*'
+    #return the new word so it can be used globally
     return res
 
-ett_ord = 'kanon'
-nytt_ord = med_eftertryck(ett_ord) #k*a*n*o*n
-print(nytt_ord)
-
-annat_ord = 'perfekt'
-nyare_ord = med_eftertryck(annat_ord) #p*e*r*f*e*k*t
-print(nyare_ord)
+# without *
+one_word = 'starz'
+# with *
+new_word = asterisk(one_word)
+# print the new word
+print(new_word)
