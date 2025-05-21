@@ -13,6 +13,6 @@ resterande = antal_äpplen % äpplen_per_låda
 if resterande == 0:
     kvar_att_plocka = 0
 else:
-    kvar_att_plocka = äpplen_per_låda
+    kvar_att_plocka = äpplen_per_låda - resterande
 
 print(f"Antal äpplen kvar att plocka: {kvar_att_plocka}")
