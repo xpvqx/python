@@ -14,6 +14,8 @@ def dagar_kvar_till_jul(datum=None):
 
 
 # tests =)
-print(f'Dagens datum är {date.today()}. Det är {dagar_kvar_till_jul()} dagar kvar till jul.')
+if __name__ == '__main__':
 
-print(f'Om datumet är 2025-12-2, är det {dagar_kvar_till_jul(date(2025, 12, 2))} dagar kvar till jul.')
+    print(f'Dagens datum är {date.today()}. Det är {dagar_kvar_till_jul()} dagar kvar till jul.')
+
+    print(f'Om datumet är 2025-12-2, är det {dagar_kvar_till_jul(date(2025, 12, 2))} dagar kvar till jul.')
