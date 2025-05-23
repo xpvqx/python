@@ -8,6 +8,3 @@ def main():
         print(f'Vårens ankomst: {spring_date}')
     except ValueError as e:
         print(e)
-
-if __name__ == '__main__':
-    main()

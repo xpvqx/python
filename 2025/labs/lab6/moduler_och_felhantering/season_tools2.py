@@ -12,6 +12,7 @@ def spring_start_date(temperature):
         if all (temp > 0.0 for temp in seven_days):
             spring_date = start_date + timedelta(days=i)
             if spring_date > end_date:
-                raise ValueError('Vårens ankomst kan inte vara senare än 31 juli')
+                raise ValueError('Vårens ankomst kan inte\
+                        vara senare än 31 juli')
             return spring_date
     raise ValueError('Våren är inte här än')
