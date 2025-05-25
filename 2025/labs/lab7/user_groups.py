@@ -1,6 +1,7 @@
 import json
 
 användardata_fil = input("Fil att läsa användardata från: ")
+
 try:
     with open(användardata_fil, 'r') as f:
         användardata = json.load(f)
