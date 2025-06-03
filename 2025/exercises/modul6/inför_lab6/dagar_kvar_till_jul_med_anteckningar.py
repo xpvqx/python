@@ -16,4 +16,4 @@ def dagar_kvar_till_jul(datum=None):
     # Returnera hur många dagar är kvar till jul
     return(julafton - datum).days
 
-print(f'{date.today()}: {dagar_kvar_till_jul()}')
+print(f'Idag är det: {date.today()}. Det är: {dagar_kvar_till_jul()} dagar kvar till jul.')
